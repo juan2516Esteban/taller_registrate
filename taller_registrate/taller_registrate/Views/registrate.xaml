@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="taller_registrate.Views.registrate">
+    <ContentPage.Content>
+        <Grid BackgroundColor="{StaticResource Primary}">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="https://img.icons8.com/ios/500/xamarin.png" Margin="0,50,0,10" WidthRequest="150" ></Image>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Fill" Padding="55,5,0,20">
+                <Label Text="Registrate" FontSize="30"></Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center" Padding="30,0,0,20">
+                <Entry Placeholder="Nombre" WidthRequest="140" Keyboard="Default" Text="{Binding NombreTxt, Mode=TwoWay }"></Entry>
+                <Entry Placeholder="Apellido" WidthRequest="140" Keyboard="Default" Text="{Binding ApellidoTxt, Mode=TwoWay}"></Entry>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Padding="50,0,10,20">
+                <Entry Placeholder="Correo Electronico" Keyboard="Email"  Text="{Binding EmailTxt , Mode=TwoWay}"></Entry>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" Padding="30,0,0,20">
+                <Entry Placeholder="Contraseña" WidthRequest="140" Keyboard="Chat" IsPassword="True" Text="{Binding ContraseñaTxt ,Mode=TwoWay}" ></Entry>
+                <Entry Placeholder="Confirmar" WidthRequest="140" Keyboard="Chat" IsPassword="True" Text="{Binding ComfirmarTxt , Mode=TwoWay}"></Entry>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Text="Siguiente" Command="{Binding RegisterCommand}"></Button>
+            </StackLayout>
+
+            <Label Grid.Row="6" Text="Programación movil" HorizontalOptions="Center" Padding="0,100,0,0"></Label>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           >
+
+    <Color x:Key="Primary" >#F5EFE6</Color>
+    <Color x:Key="Secondary">#E8DFCA</Color>
+    <Color x:Key="elementos_primarios">#AEBDCA</Color>
+    <Color x:Key="elementos_secundarios">#7895B2</Color>
+
+    <Style TargetType="Button" >
+        <Setter Property="BackgroundColor" Value="{StaticResource  elementos_primarios}"></Setter>
+        <Setter Property="CornerRadius" Value="20"></Setter>
+        <Setter Property="FontSize" Value="Medium"></Setter>
+        <Setter Property="HeightRequest" Value="50"></Setter>
+        <Setter Property="WidthRequest" Value="300"></Setter>
+        <Setter Property="VerticalOptions" Value="Start"></Setter>
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+    </Style>
+
+    <Style TargetType="StackLayout">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+        <Setter Property="Spacing" Value="30"></Setter>
+        <Setter Property="Padding" Value="30,40,30,20"></Setter>
+        <Setter Property="HorizontalOptions" Value="Start"></Setter>
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="FontSize" Value="20"></Setter>
+        <Setter Property="FontFamily" Value="KOMIKAX_"></Setter>
+        <Setter Property="HorizontalOptions" Value="Fill"></Setter>
+        <Setter Property="TextColor" Value="Black"></Setter>
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+        <Setter Property="TextColor" Value="Black"></Setter>
+        <Setter Property="PlaceholderColor" Value="#515151"></Setter>
+        <Setter Property="HorizontalOptions" Value="Start"></Setter>
+        <Setter Property="FontFamily" Value="MutterKrauseNormal"></Setter>
+        <Setter Property="WidthRequest" Value="300"></Setter>
+    </Style>
+    
+    
+    
+    
+</ResourceDictionary>
